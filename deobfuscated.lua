@@ -195,9 +195,9 @@ end
 
 local Window = Rayfield:CreateWindow({
 	Name = "Chrona v5",
-	LoadingTitle = "Chrona UI V5",
-	LoadingSubtitle = "by Clover :)",
-	Theme = "Ocean",
+	LoadingTitle = "Chrona V5",
+	LoadingSubtitle = "by @suedbyroblox",
+	Theme = "Vaporwave",
 	ToggleUIKeybind = "F1",
 	ConfigurationSaving = { Enabled = false },
 	DisableRayfieldPrompts = true,
