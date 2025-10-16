@@ -245,7 +245,7 @@ local TimerSection = TimerTab:CreateSection("Race Timer")
 local goToLabel = TimerTab:CreateLabel("Go To: None")
 local timerLabel = TimerTab:CreateLabel("00:00.00")
           
-local statusParagraph = TimerTab:CreateParagraph({ Title = "Status: " .. "Idle" })
+local statusParagraph = TimerTab:CreateParagraph({ Title = "Status:", Content = "Idle" })
 
 TimerTab:CreateButton({
 	Name = "Start Race",
