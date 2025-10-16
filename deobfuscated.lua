@@ -53,7 +53,7 @@ local function pushLog(msg)
 	local line = ("[%s] %s"):format(ts, tostring(msg))
 	table.insert(logLines, 1, line)
 	if #logLines > MAX_LOG_LINES then table.remove(logLines) end
-	if settings.DebugMode then print("[HyperRace]", line) end
+	if settings.DebugMode then print("[Chrona]", line) end
 	if DebugRefreshFunc then DebugRefreshFunc() end
 end
 
@@ -194,9 +194,9 @@ if not ok or not Rayfield then
 end
 
 local Window = Rayfield:CreateWindow({
-	Name = "HyperRace v5",
-	LoadingTitle = "Neon Dashboard",
-	LoadingSubtitle = "by Dynamic",
+	Name = "Chrona v5",
+	LoadingTitle = "Chrona UI V5",
+	LoadingSubtitle = "by Clover :)",
 	Theme = "Ocean",
 	ToggleUIKeybind = "F1",
 	ConfigurationSaving = { Enabled = false },
@@ -493,5 +493,5 @@ if not selectedName and #raceDurations > 0 then
 	end
 end
 
-Rayfield:Notify({ Title = "HyperRace v5 Loaded", Content = "UI ready. Press F1 to toggle.", Duration = 4 })
-pushLog("HyperRace v5 ready (Offset setting enabled).")
+Rayfield:Notify({ Title = "Chrona v5 Loaded", Content = "UI ready. Press F1 to toggle.", Duration = 4 })
+pushLog("Chrona v5 ready (Offset setting enabled).")
