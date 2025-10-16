@@ -245,7 +245,7 @@ local TimerSection = TimerTab:CreateSection("Race Timer")
 local goToLabel = TimerTab:CreateLabel("Go To: None")
 local timerLabel = TimerTab:CreateLabel("00:00.00")
           
-local statusParagraph = TimerTab:CreateParagraph({ Title = "Status" .. "Idle" })
+local statusParagraph = TimerTab:CreateParagraph({ Title = "Status: " .. "Idle" })
 
 TimerTab:CreateButton({
 	Name = "Start Race",
@@ -268,7 +268,7 @@ TimerTab:CreateButton({
 		running = true
 		startTime = tick()
 		goToLabel:Set("Go To: " .. tostring(selectedBest) .. "s")
-		statusParagraph:Update({ Content = "Running: "..selectedName })
+		statusParagraph:Update({ Content = "Running: " .. selectedName  })
 
 		teleportThread = coroutine.create(function()
 			local checkpointMiss = 0
